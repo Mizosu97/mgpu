@@ -1,0 +1,2 @@
+# mgpu
+Hybrid graphics manager
