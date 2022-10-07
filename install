@@ -1,0 +1,5 @@
+#/bin/bash
+
+echo "installing mgpu"
+
+sudo mv mgpu /usr/bin

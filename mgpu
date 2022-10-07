@@ -1,0 +1,15 @@
+#!/bin/lua
+
+command = ""
+
+for _,ag in pairs(arg) do
+	if ag ~= "mgpu" and ag ~= "/bin/lua" and ag ~= "/usr/bin/mgpu" and ag ~= "./mgpu" and ag ~= "-d" and ag ~= "-i" then
+		command = command .. ag .. " "
+	end
+end
+
+if arg[1] == "-d" then
+	os.execute("export DRI_PRIME=1 && exec " .. command)
+elseif arg[1] == "-i" then
+	os.execute("export DRI_PRIME=0 && exec " .. command)
+end
