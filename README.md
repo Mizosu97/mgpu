@@ -1,4 +1,5 @@
 # mgpu
+Developed by [The Duat](https://theduat.neocities.org).
 ## Hybrid graphics manager
 
 This tool lets you specify what GPU you want a command to run on.
